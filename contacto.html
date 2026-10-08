@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p class="menu"><a href="index.html">Inicio</a> | <a href="autobiografia.html">Autobiografía</a> | <a href="galery.html">Galería</a> | <a href="formulario.html">Formulario</a> | <a href="boton.html">Botón</a> | <a href="js.html">Herramientas</a> | <a href="contacto.html">Contacto</a></p>
+
+    <h1>Contacto</h1>
+    <form id="contacto">
+        <fieldset>
+            <legend>Datos</legend>
+            Nombre: <input type="text" id="nombre"><br>
+            Correo: <input type="email" id="correo"><br>
+            Género:
+            <input type="radio" name="genero" value="M"> Masculino
+            <input type="radio" name="genero" value="F"> Femenino
+        </fieldset>
+        <fieldset>
+            <legend>Más</legend>
+            <input type="checkbox" id="terminos"> Acepto los términos<br>
+            País:
+            <select id="pais">
+                <option value="">Elige</option>
+                <option>México</option>
+                <option>Argentina</option>
+                <option>Chile</option>
+            </select><br>
+            Mensaje:<br>
+            <textarea id="mensaje" rows="4" cols="40"></textarea>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+    <p id="errores" class="error"></p>
+    <p id="exito" class="ok"></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.boton{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size:  20px;
+    color:  #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+.boton:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+}
+
+/* ---------- Estilos agregados ---------- */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    background-color: #f4f7fb;
+    color: #222;
+}
+h1, h2 { color: #0016b0; }
+.menu {
+    background-color: #0b1b92;
+    padding: 10px;
+    border-radius: 6px;
+}
+.menu a { color: #d02525; }
+img { max-width: 300px; }
+table, td, th {
+    border: 1px solid #999;
+    border-collapse: collapse;
+    padding: 8px;
+}
+fieldset { margin-bottom: 10px; }
+.error { color: rgb(77, 21, 129); }
+.ok { color: rgb(36, 148, 36); font-weight: bold; }
+.calc button { width: 60px; height: 45px; font-size: 18px; margin: 2px; }
+#pantalla { width: 250px; font-size: 24px; text-align: right; }

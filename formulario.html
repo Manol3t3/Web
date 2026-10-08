@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p class="menu"><a href="index.html">Inicio</a> | <a href="autobiografia.html">Autobiografía</a> | <a href="galery.html">Galería</a> | <a href="formulario.html">Formulario</a> | <a href="boton.html">Botón</a> | <a href="js.html">Herramientas</a> | <a href="contacto.html">Contacto</a></p>
+    <form>
+        <fieldset>
+            <legend>Uso de cajas de texto - Nombre</legend>
+            Nombre:<input name="nombre" type="text">
+            Apellidos: <input name="apellidos" type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Uso de Radio Buttons - Genero</legend>
+            <input type="radio" name="radio1" id="radio1">Masculino
+            <input type="radio" name="radio1" id="radio1">Femenino
+        </fieldset>
+    
+        <fieldset>
+            <legend> Uso de ChecBox</legend>
+            <input type="checkbox" name="deporte" value="Deportes"> Hacer deporte
+            <input type="checkbox" name="tv" value="Television"> Ver Tv
+            <input type="checkbox" name="ejercicio" value="Ejercicio"> Hacer Ejercicio
+        </fieldset>
+        <fieldset>
+            <legend> Uso del Select Estudios Actuales</legend>
+            <select name="select">
+                <option value="value1">Secundaria</option>
+                <option value="value2">Prepa</option>
+                <option value="value">Uni</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Uso de List - Navegador</legend>
+            <label>Selecciona el bucador:
+                <input list="buscadores" name="MisBuscadores"/>
+            </label>
+            <datalist id="buscadores">
+                <option value="Chrome">
+                <option value="Edge">
+                <option value="FireFox">   
+            </datalist>
+        </fieldset>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

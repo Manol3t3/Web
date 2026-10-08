@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p class="menu"><a href="index.html">Inicio</a> | <a href="autobiografia.html">Autobiografía</a> | <a href="galery.html">Galería</a> | <a href="formulario.html">Formulario</a> | <a href="boton.html">Botón</a> | <a href="js.html">Herramientas</a> | <a href="contacto.html">Contacto</a></p>
+
+    <h1>Convertidor a pesos</h1>
+    <input type="number" id="monto" placeholder="Cantidad">
+    <select id="moneda">
+        <option value="18.5">Dólar (USD)</option>
+        <option value="21.5">Euro (EUR)</option>
+    </select>
+    <button onclick="convertir()">Convertir</button>
+    <p id="resultado"></p>
+
+    <h1>Calculadora</h1>
+    <div class="calc">
+        <input type="text" id="pantalla" readonly><br>
+        <button onclick="tecla('7')">7</button><button onclick="tecla('8')">8</button><button onclick="tecla('9')">9</button><button onclick="tecla('/')">/</button><br>
+        <button onclick="tecla('4')">4</button><button onclick="tecla('5')">5</button><button onclick="tecla('6')">6</button><button onclick="tecla('*')">*</button><br>
+        <button onclick="tecla('1')">1</button><button onclick="tecla('2')">2</button><button onclick="tecla('3')">3</button><button onclick="tecla('-')">-</button><br>
+        <button onclick="tecla('0')">0</button><button onclick="tecla('.')">.</button><button onclick="calcular()">=</button><button onclick="tecla('+')">+</button><br>
+        <button onclick="limpiar()">C</button>
+    </div>
+
+    <h1>Cuestionario</h1>
+    <p>1. ¿Qué etiqueta crea un enlace?</p>
+    <input type="radio" name="q1" value="a"> &lt;link&gt;
+    <input type="radio" name="q1" value="b"> &lt;a&gt;
+    <input type="radio" name="q1" value="c"> &lt;url&gt;
+
+    <p>2. ¿Qué propiedad CSS cambia el fondo?</p>
+    <input type="radio" name="q2" value="a"> color
+    <input type="radio" name="q2" value="b"> background-color
+    <input type="radio" name="q2" value="c"> fondo
+
+    <p>3. ¿Qué etiqueta inserta un video?</p>
+    <input type="radio" name="q3" value="a"> &lt;movie&gt;
+    <input type="radio" name="q3" value="b"> &lt;media&gt;
+    <input type="radio" name="q3" value="c"> &lt;video&gt;
+    <br><br>
+    <button onclick="calificar()">Calificar</button>
+    <p id="nota"></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>-
